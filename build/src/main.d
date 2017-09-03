@@ -1,4 +1,4 @@
-/home/jochrist/repos/FSAE-2017-PCM/build/src/main.o: src/main.cpp \
+/home/jochrist/repos/FSAE-2017-Dash/build/src/main.o: src/main.cpp \
  teensy3/WProgram.h teensy3/avr/pgmspace.h teensy3/avr/interrupt.h \
  teensy3/avr_functions.h teensy3/wiring.h teensy3/binary.h \
  teensy3/core_id.h teensy3/core_pins.h teensy3/kinetis.h \
@@ -10,4 +10,4 @@
  teensy3/usb_rawhid.h teensy3/usb_flightsim.h teensy3/usb_mtp.h \
  teensy3/usb_audio.h teensy3/usb_touch.h teensy3/usb_undef.h \
  teensy3/WCharacter.h teensy3/elapsedMillis.h teensy3/WProgram.h \
- teensy3/IntervalTimer.h
+ teensy3/IntervalTimer.h libraries/FSAE-2017-Common/logger.h

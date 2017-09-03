@@ -1,28 +1,21 @@
 #include "WProgram.h"
+#include "logger.h"
 
-extern "C" int main(void)
+int main()
 {
-#ifdef USING_MAKEFILE
-
-  // To use Teensy 3.0 without Arduino, simply put your code here.
-  // For example:
-
+  
+  //Set up resources:
+  initialize_logging(DEBUG);
+   
+  //Set up the LED pin as an output.
   pinMode(13, OUTPUT);
-  while (1) {
-    digitalWriteFast(13, HIGH);
-    delay(250);
-    digitalWriteFast(13, LOW);
-    delay(250);
-  }
-
-
-#else
-  // Arduino's main() function just calls setup() and loop()....
-  setup();
-  while (1) {
-    loop();
-    yield();
-  }
-#endif
+  
+  //Control Loop:
+  while (1)
+    {
+      digitalWriteFast(13, HIGH);
+      delay(250);
+      digitalWriteFast(13, LOW);
+      delay(250);
+    }
 }
-
